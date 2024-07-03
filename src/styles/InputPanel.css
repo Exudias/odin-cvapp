@@ -1,0 +1,9 @@
+#input {
+    width: 50%;
+    background-color: red;
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
