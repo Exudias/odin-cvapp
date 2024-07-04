@@ -34,10 +34,10 @@ function ExperienceFieldSet({onChange, values, del})
     }
 
     return <div className="field-set">
-        <InputField name="company-name" label="Company name" placeholder="Apple" value={name} onChange={handleNameChange}/>
-        <InputField name="title-position" label="Title of position" placeholder="Web developer" value={title} onChange={handleTitleChange}/>
-        <InputField name="responsibilities" label="Responsibilities" placeholder="Creating websites" value={responsibilities} onChange={handleResponsibilitiesChange}/>
-        <InputField name="duration-position" label="Duration of experience" placeholder="2022-2024" value={duration} onChange={handleDurationChange}/>
+        <InputField name="company-name" label="Company name" placeholder="Apple" value={name} onChange={handleNameChange} id={values.id}/>
+        <InputField name="title-position" label="Title of position" placeholder="Web developer" value={title} onChange={handleTitleChange} id={values.id}/>
+        <InputField name="responsibilities" label="Responsibilities" placeholder="Creating websites" value={responsibilities} onChange={handleResponsibilitiesChange} id={values.id}/>
+        <InputField name="duration-position" label="Duration of experience" placeholder="2022-2024" value={duration} onChange={handleDurationChange} id={values.id}/>
         <button onClick={del}>X</button>
     </div>
 }

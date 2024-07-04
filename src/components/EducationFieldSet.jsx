@@ -27,9 +27,9 @@ function EducationFieldSet({onChange, values, del})
     }
 
     return <div className="field-set">
-        <InputField name="school-name" label="School name" placeholder="Harvard University" value={name} onChange={handleNameChange}/>
-        <InputField name="title-study" label="Title of study" placeholder="BSc Computer Science" value={title} onChange={handleTitleChange}/>
-        <InputField name="duration-study" label="Duration of study" placeholder="2020-2024" value={duration} onChange={handleDurationChange}/>
+        <InputField name="school-name" label="School name" placeholder="Harvard University" value={name} onChange={handleNameChange} id={values.id}/>
+        <InputField name="title-study" label="Title of study" placeholder="BSc Computer Science" value={title} onChange={handleTitleChange} id={values.id}/>
+        <InputField name="duration-study" label="Duration of study" placeholder="2020-2024" value={duration} onChange={handleDurationChange} id={values.id}/>
         <button onClick={del}>X</button>
     </div>
 }
