@@ -10,15 +10,10 @@ function InputSection({title, children})
         setOpen(!open);
     }
 
-    return !open ? (<div className="input-section" onClick={handleClick}>
-        <h1>{title}</h1>
-    </div>)
-    :
-    (<div className="input-section">
-        <h1>{title}</h1>
-        {children}
-        <button onClick={handleClick}>Close</button>
-    </div>)
+    return <div className="input-section">
+        <div className='input-section-header' onClick={handleClick}><h1>{title}</h1></div>
+        {open ? children : null}
+    </div>
 }
 
 export default InputSection;
