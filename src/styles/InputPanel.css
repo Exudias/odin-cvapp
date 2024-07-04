@@ -1,5 +1,5 @@
 #input {
-    width: 65%;
+    flex: 65;
     min-height: 100vh;
 
     display: flex;
