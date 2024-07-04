@@ -1,7 +1,21 @@
 .field-set {
+    position: relative;
+
     display: flex;
     width: 80%;
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
+
+    background-color: rgb(20, 20, 20);
+    border-radius: 8px;
+
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.field-set button {
+    position: absolute;
+    top: 0;
+    right: 0;
 }

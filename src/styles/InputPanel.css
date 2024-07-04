@@ -1,7 +1,6 @@
 #input {
-    width: 50%;
-    background-color: red;
-    height: 800px;
+    width: 65%;
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;

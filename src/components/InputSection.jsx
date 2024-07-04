@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 function InputSection({title, children}) 
 {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
 
     function handleClick()
     {
