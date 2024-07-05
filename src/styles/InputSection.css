@@ -15,8 +15,19 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     background-color: rgb(20, 20, 20);
+}
+
+.input-section-header img {
+    filter: invert();
+    width: 64px;
+    transition: transform 0.2s;
+}
+
+img.input-open {
+    transform: rotate(-0.5turn);
 }
 
 .input-section-header h1 {

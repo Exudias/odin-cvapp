@@ -6,8 +6,16 @@ function ResultPanel({name, email, phone, education, experience})
         <div className="result-general">
             <h1>{name}</h1>
             <div className='result-contacts'>
-                {email && <a href={"mailto:" + email} tabIndex="-1">{email}</a>}
-                {phone && <a href={"tel:" + phone} tabIndex='-1'>{phone}</a>}
+                {email && (
+                <div className='contact-group'>
+                    <img src="email.svg" alt="email"/>
+                    <a href={"mailto:" + email} tabIndex="-1">{email}</a>
+                </div>)}
+                {phone && (
+                <div className='contact-group'>
+                    <img src="phone.svg" alt="phone"/>
+                    <a href={"tel:" + phone} tabIndex='-1'>{phone}</a>
+                </div>)}
             </div>
         </div>
         {education.length > 0 && 

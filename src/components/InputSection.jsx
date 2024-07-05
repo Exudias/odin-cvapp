@@ -11,7 +11,7 @@ function InputSection({title, children})
     }
 
     return <div className="input-section">
-        <div className='input-section-header' onClick={handleClick}><h1>{title}</h1></div>
+        <div className='input-section-header' onClick={handleClick}><h1>{title}</h1><img src="chevron-down.svg" className={open ? 'input-open' : ''}/></div>
         {open ? children : null}
     </div>
 }

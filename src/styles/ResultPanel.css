@@ -99,3 +99,13 @@ h4 {
     font-weight: 400;
     margin-top: -8px;
 }
+
+img {
+    width: 32px;
+}
+
+.contact-group {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
